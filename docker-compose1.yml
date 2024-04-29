@@ -15,13 +15,13 @@ services:
   dth:
     image: haryyb43/dth:latest
     ports:
-      - "83:80"
+      - "85:80"
     deploy :
       replicas : 3
   recharge:
     image: haryyb43/recharge:latest
     ports:
-      - "84:80"
+      - "90:80"
     deploy :
       replicas : 3
 
