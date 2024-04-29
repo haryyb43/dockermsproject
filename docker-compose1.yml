@@ -21,7 +21,7 @@ services:
   recharge:
     image: haryyb43/recharge:latest
     ports:
-      - "90:80"
+      - "86:80"
     deploy :
       replicas : 3
 
