@@ -1,27 +1,27 @@
 version: '3.8'
 services:
   movies:
-    image: haryyb43/movies:latest
+    image: haryyb43/movies1:latest
     ports:
-      - "81:80"
+      - "95:80"
     deploy:
       replicas: 3
       train:
-    image: haryyb43/train:latest
+    image: haryyb43/train1:latest
     ports:
-      - "82:80"
+      - "96:80"
     deploy:
       replicas : 3
   dth:
-    image: haryyb43/dth:latest
+    image: haryyb43/dth1:latest
     ports:
-      - "85:80"
+      - "97:80"
     deploy :
       replicas : 3
   recharge:
-    image: haryyb43/recharge:latest
+    image: haryyb43/recharge1:latest
     ports:
-      - "86:80"
+      - "98:80"
     deploy :
       replicas : 3
 
